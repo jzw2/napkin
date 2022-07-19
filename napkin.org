@@ -133,7 +133,7 @@ determinant \(-1\).  In total there are \(2(p-1)(p^2 + p) = 2p(p^2 - 1)\), so
 * Metric Spaces
 
 ** Exercise 2.3.4
-Show that \(\epsilon -\delta \) continuity implies sequential continuitay at
+Show that \(\varepsilon -\delta \) continuity implies sequential continuitay at
 each point.
 
 
@@ -145,7 +145,7 @@ coverging to \(p\), then the sequence, \(f(x_1), f(x_2), f(x_3), \ldots\)
 covergences to \(f(p)\)
 
 
-To show convergence for \(f(x_1), f(x_2), f(x_3), \ldots\)
+To show \(f(x_1), f(x_2), f(x_3), \ldots\)
 covergences to \(f(p)\), given any \(\varepsilon\), it needs to be shown that there
 exists a positive integer \(A\), such that for any \(a > A\), \(
 d(f(x_a), f(p)) < \varepsilon\).
@@ -159,11 +159,9 @@ d(x, p) < \delta \Rightarrow d(f(x), f(p)) < \varepsilon
 \end{equation}
 
 Because \(x_1, x_2, x_3, \ldots\) converges, it menas that there is an
-integer \(A\) such that for any \(a > A\), \( d(x_{a}, p) < \delta\), but by equation
+positive integer \(A\) such that for any \(a > A\), \( d(x_{a}, p) < \delta\), and by equation
 \ref{eq:5}, this means that \(d(f(x_{a}), f(p)) < \varepsilon\), and so this
 concludes the proof.
-
-
 
 
 * Homomorphism and Quotient Groups
