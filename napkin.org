@@ -1,6 +1,6 @@
 #+title: Napkin
-* Chapter 1
-** A
+* Groups
+** B
 *Prove Lagrange’s theorem for orders in the special case that G is a finite abelian group.*
 
 
@@ -11,7 +11,7 @@ so \(h = g g_1 g g_2 g g_3 \dots g g_n\) for some permutation of \(g_i\).  Howev
 h is the same no matter the permutation.  Then, we can simplify this to
 \(h = g^n h\) therefore \(g^n\) is the identity.
 
-** B
+** D
 Let p be a prime. Show that the only group of order p is \(\mathbb{Z}/p \mathbb{Z}\).
 
 
@@ -39,7 +39,7 @@ so \(g = 0\), but we said that \(g\) was not the identity, so \(|H| = |G|\), and
 are isomorphic.
 
 
-** C
+** H
 
 Let \(p\) be a prime and \(F_1 = F_2 = 1, F_{n+2} = F_{n+1} + F_n\)
  be the Fibonacci sequence. Show that \(F_{2p(p^2-1)}\) is divisible by \(p\).
