@@ -28,33 +28,39 @@ By lagrange's theorem,  \(g^{|H|} = 0\), and \(g^{|G|} = 0\), so \(g ^{k |H| \mo
 \(x \in (Z / pZ)^{\times}\),
 
 \begin{equation}
-\label{eq:1}
+\label{fermatlittle}
 x^{p-1} = 1 \pmod p
 \end{equation}
 
-Equation \ref{eq:1} is fermat's little theorem.
+Equation \ref{fermatlittle} is fermat's little theorem.
 Since we know \(|G|\) is prime, by Fermat's Little theorem, \(|H|^{|G| - 1} \mod |G| = 1\),
 
 so \(g = 0\), but we said that \(g\) was not the identity, so \(|H| = |G|\), and they
 are isomorphic.
 
 
-\textbf{Let \(p\) be a prime and \(F_1 = F_2 = 1, F_{n+2} = F_{n+1} + F_n\)
- be the Fibonacci sequence. Show that \(F_{2p(p^2-1)}\) is divisible by \(p\)}.
+** C
 
+Let \(p\) be a prime and \(F_1 = F_2 = 1, F_{n+2} = F_{n+1} + F_n\)
+ be the Fibonacci sequence. Show that \(F_{2p(p^2-1)}\) is divisible by \(p\).
 
+*** Proof
 We can turn the fibonacci sequence into a matrix using
 
 
-\[
+\begin{equation}
+\label{eq:2}
 g =
 \begin{pmatrix}
 1 & 1 \\
 1 & 0 \\
 \end{pmatrix}
-\]
+\end{equation}
+
+
 because
-\[
+\begin{equation}
+\label{eq:3}
 \begin{pmatrix}
 1 & 1 \\
 1 & 0 \\
@@ -63,11 +69,12 @@ because
 F_{n+1} & F_{n} \\
 F_n & F_{n -1 }\\
 \end{pmatrix}
-\]
-
+\end{equation}
 This is proved using induction.  The base case is \(n = 1\) and is true, then
 
-\[
+
+\begin{equation}
+\label{eq:4}
 g^{n + 1} = g g^n = \begin{pmatrix}
 1 & 1 \\
 1 & 0 \\
@@ -80,7 +87,7 @@ F_n & F_{n - 1} \\
 F_{n + 2}  & F_{n + 1} \\
 F_{n + 1} & F_n \\
 \end{pmatrix}
-\]
+\end{equation}
 
 If the field of the matrix is \(\mathbb{Z} / p \mathbb{Z}\), and we prove
 that \(g^n = I\), where \(I\) is the identity matrix, then we will have shown that
@@ -121,9 +128,10 @@ Combining the cases, we get \((p - 1)(p^2 + p)\) matrices that have determinant 
 By a similar proof, we can show there are \((p - 1)(p^2 + p)\) matrices that have
 determinant \(-1\).  In total there are \(2(p-1)(p^2 + p) = 2p(p^2 - 1)\), so
 \(|G| = 2p(p^2 - 1)\), which completes the proof.
+
 * Chapter 2
 * Chapter 3
-** 3 a
+** A
 
 #+begin_quote
 Determine all groups \(G\) for which the map \(\phi : G \rightarrow G\) defined by
@@ -137,4 +145,10 @@ is a homomorphism.
 By definiton of homomorphism, for any \(g_1, g_2\), \(\phi(g_1 g_2) =
 \phi(g_{1}) \phi(g_{2})\), so \( (g_1 g_{2})^{2}  =
 g_{1}^{2} g_{2}^{2} \), so \( g_1 g_2 g_1 g_2 = g_1 g_1 g_2 g_2\) so \(g_2 g_1 =
-g_1 g_2\)
+g_1 g_2\), Therefore, these groups are abelian.
+** C
+
+
+#+begin_quote
+helol everybody
+#+end_quote
