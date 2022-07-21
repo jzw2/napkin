@@ -178,7 +178,7 @@ is a continuous function.
 Let \((x, y)\) be a point in \(M \times M\). Let \(x_1, x_2, x_3, \ldots\)
 sequency that converges to \(x\) \(M\) and and similarly \(y_1, y_2, y_3,
 \ldots\) is sequence that converges to \(y\), then \((x_{1}, y_1), (x_{2}, y_2),
-(x_{3}, y_3), \ldots\),  it needs to be shown that \(d(x_{1}, y_1), d(x_{2}, y_2),
+(x_{3}, y_3), \ldots\) converges to \((x, y)\),  it needs to be shown that \(d(x_{1}, y_1), d(x_{2}, y_2),
 d(x_{3}, y_3), \ldots\), converges to \(d(x, y)\)
 
 
@@ -191,13 +191,13 @@ As both \(x_1, x_2, x_3, \ldots\) and \(y_1, y_2, y_3,
 
 
 Let \(N\) be the max of \(N_1, N_2\), and let \(n > N\). Note that since absolute value itself obeys
-triangle ineuality \(|d(x, y) - d(x_n, y_{n})| < |d(x,y) - d(x, y_{n}| + |d(x,
-y_n) - d(x_n, y_n)|\). By triangle inequality, \(|d(x,y) - d(x, y_{n}| < d(y,
-y_n)\) and similarly \(|d(x,y_{n}) - d(x_n, y_{n}| < d(x,
-x_n)\), then \(|d(x, y) - d(x_n, y_{n})| < |d(x,y) - d(x, y_{n}| + |d(x,
+triangle ineuality \(|d(x, y) - d(x_n, y_{n})| < |d(x,y) - d(x, y_{n})| + |d(x,
+y_n) - d(x_n, y_n)|\). By triangle inequality, \(|d(x,y) - d(x, y_{n})| < d(y,
+y_n)\) and similarly \(|d(x,y_{n}) - d(x_n, y_{n})| < d(x,
+x_n)\), then \(|d(x, y) - d(x_n, y_{n})| < |d(x,y) - d(x, y_{n})| + |d(x,
 y_n) - d(x_n, y_n)| < d(y,
 y_n) + d(x,
-x_n) < \varepsilon\), and this concludes the proof.
+x_n) < \varepsilon / 2  + \varepsilon / 2 = \varepsilon\), and this concludes the proof.
 
 
 
